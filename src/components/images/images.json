@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Cyclops",
+    "image": "./assets/images/cyclops.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Rogue",
+    "image": "./assets/images/rogue.png"
+  },
+  {
+    "id": 3,
+    "name": "Wolverine",
+    "image": "./assets/images/wolverine.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Professor X",
+    "image": "./assets/images/prof_x.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Storm",
+    "image": "./assets/images/storm.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Sabertooth",
+    "image": "./assets/images/sabertooth.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Mystique",
+    "image": "./assets/images/mystique.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Phoenix",
+    "image": "./assets/images/phoenix.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Beast",
+    "image": "./assets/images/beast.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Gambit",
+    "image": "./assets/images/gambit.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Jubilee",
+    "image": "./assets/images/jubilee.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Magneto",
+    "image": "./assets/images/magneto.jpg"
+  }
+]
