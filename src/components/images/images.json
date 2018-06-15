@@ -2,61 +2,73 @@
   {
     "id": 1,
     "name": "Cyclops",
-    "image": "./assets/images/cyclops.jpg"
+    "image": "./assets/images/cyclops.jpg",
+    "used": false
   },
   {
     "id": 2,
     "name": "Rogue",
-    "image": "./assets/images/rogue.png"
+    "image": "./assets/images/rogue.png",
+    "used": false
   },
   {
     "id": 3,
     "name": "Wolverine",
-    "image": "./assets/images/wolverine.jpg"
+    "image": "./assets/images/wolverine.jpg",
+    "used": false
   },
   {
     "id": 4,
     "name": "Professor X",
-    "image": "./assets/images/prof_x.jpg"
+    "image": "./assets/images/prof_x.jpg",
+    "used": false
   },
   {
     "id": 5,
     "name": "Storm",
-    "image": "./assets/images/storm.jpg"
+    "image": "./assets/images/storm.jpg",
+    "used": false
   },
   {
     "id": 6,
     "name": "Sabertooth",
-    "image": "./assets/images/sabertooth.jpg"
+    "image": "./assets/images/sabertooth.jpg",
+    "used": false
   },
   {
     "id": 7,
     "name": "Mystique",
-    "image": "./assets/images/mystique.jpg"
+    "image": "./assets/images/mystique.jpg",
+    "used": false
   },
   {
     "id": 8,
     "name": "Phoenix",
-    "image": "./assets/images/phoenix.jpg"
+    "image": "./assets/images/phoenix.jpg",
+    "used": false
   },
   {
     "id": 9,
     "name": "Beast",
-    "image": "./assets/images/beast.jpg"
+    "image": "./assets/images/beast.jpg",
+    "used": false
   },
   {
     "id": 10,
     "name": "Gambit",
-    "image": "./assets/images/gambit.jpg"
+    "image": "./assets/images/gambit.jpg",
+    "used": false
   },
   {
     "id": 11,
     "name": "Jubilee",
-    "image": "./assets/images/jubilee.jpg"
+    "image": "./assets/images/jubilee.jpg",
+    "used": false
   },
   {
     "id": 12,
     "name": "Magneto",
-    "image": "./assets/images/magneto.jpg"
+    "image": "./assets/images/magneto.jpg",
+    "used": false
   }
 ]

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
@@ -11,17 +11,45 @@ class App extends Component {
   state = {
     xmen,
     score: 0,
+    highScore: 0,
   };
 
-  runGame = () => {
-    this.setState({ score: this.state.score + 1 });
-    console.log(xmen.id);
+  runGame = (id, used) => {
+    if (used) {
+      this.gameOver();
+      return;
+    }
+    this.state.xmen.find((element, i) => {
+      if (element.id === id) {
+        if (!xmen[i].used) {
+          xmen[i].used = true;
+          this.setState({ score: this.state.score + 1 });
+          // this.state.xmen.sort(() => Math.random - 0.5);
+        } else {
+          this.gameOver();
+        }
+      }
+    });
   };
 
+  gameOver = () => {
+    this.state.xmen.forEach(function(xman) {
+      xman.used = false;
+    });
+    if (this.state.score > this.state.highScore) {
+      this.setState({ highScore: this.state.score });
+      this.setState({ score: 0 });
+
+      alert("New high score acheived");
+    } else if (this.state.score < this.state.highScore) {
+      this.setState({ score: 0 });
+      alert("Game over, bub.");
+    }
+  };
   render() {
     return (
       <div>
-        <Navbar score={this.state.score} />
+        <Navbar score={this.state.score} highScore={this.state.highScore} />
         <Jumbotron />
         <div className="container">
           {this.state.xmen.map(xmen => (
@@ -31,6 +59,7 @@ class App extends Component {
               name={xmen.name}
               image={xmen.image}
               game={this.runGame}
+              used={xmen.used}
             />
           ))}
         </div>
