@@ -15,6 +15,8 @@ class App extends Component {
   };
 
   runGame = (id, used) => {
+    this.state.xmen.sort(() => Math.random() - 0.5);
+
     if (used) {
       this.gameOver();
       return;
@@ -24,7 +26,6 @@ class App extends Component {
         if (!xmen[i].used) {
           xmen[i].used = true;
           this.setState({ score: this.state.score + 1 });
-          // this.state.xmen.sort(() => Math.random - 0.5);
         } else {
           this.gameOver();
         }
@@ -40,7 +41,7 @@ class App extends Component {
       this.setState({ highScore: this.state.score });
       this.setState({ score: 0 });
 
-      alert("New high score acheived");
+      alert("New high score acheived.\n\rHigh Score: " + this.state.score);
     } else if (this.state.score < this.state.highScore) {
       this.setState({ score: 0 });
       alert("Game over, bub.");
